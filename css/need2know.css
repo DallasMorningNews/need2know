@@ -10,21 +10,30 @@
     font-size: 12px;
     line-height: 24px; }
 
-.glossary {
-  box-shadow: 0 0 6px rgba(66, 66, 66, 0.5);
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 5%;
-  z-index: 110;
-  background-color: #212121;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 0;
-  color: white;
-  font-family: Arial, sans-serif; }
+    .glossary {
+    box-shadow: 0 0 6px rgba(66, 66, 66, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 110;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    opacity: 0;
+    margin-top: 50px;
+    -webkit-transtion: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+  .glossDisplay {
+    opacity: 1;
+    margin-top: 5px; }
   .whiteTheme {
     background-color: #fbfbfb;
     color: #212121; }

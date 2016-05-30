@@ -64,6 +64,10 @@
   		self.find("h6").html(entry.name);
   		self.find("p").html(entry.definition);
 
+      setTimeout(function() {
+        self.addClass("glossDisplay");
+      }, 0);
+
   		// if an entry has an image, populate the image tag with the appropriate parameters from the entry. if there's no image in the entry, hide the image
   		if (entry.image) {
   			self.find("img").attr({
@@ -78,7 +82,10 @@
 
   	// hiding the glossary
   	function hideGlossary() {
-  		self.css("display", "none");
+      self.removeClass("glossDisplay");
+      setTimeout(function() {
+        self.css("display", "none");
+      }, 250);
   	}
 
   	// display and build the glossary popup on mouseover
