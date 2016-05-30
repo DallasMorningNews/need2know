@@ -10,9 +10,9 @@ Does your story have a large cast of characters or locales that may or may not b
 **JQUERY:** This being a jquery plugin requires jquery.
 
 ####Setup
-*HTML:* Place the contents of the `glossary.html` file at the top of your body tag within your document. For best results, make sure your body tag has a css `position` attribute set.
+**HTML:** Place the contents of the `glossary.html` file at the top of your body tag within your document. For best results, make sure your body tag has a css `position` attribute set.
 
-*CSS and JS*: Copy the `need2know.css` and `need2know.js` files (or the minified versions) to your own css and javascript directories. Be sure to include calls to those files within your html document.
+**CSS and JS**: Copy the `need2know.css` and `need2know.js` files (or the minified versions) to your own css and javascript directories. Be sure to include calls to those files within your html document.
 
 #### Targeting your glossary terms
 To highlight a person, place, phrase, etc. for inclusion in your glossary, simply surround the text with a `span` tag. The `span` tag will need a `class` of gloss and a `data-entry` attribute, which will be set to the term you want to define (usually the name of a person or place). For example:
@@ -37,7 +37,7 @@ var sample = [
 			imageAlt: "Alexander Hamilton, portrayed here shortly after teh American Revolution."
 		}
 	];
-	```
+```
 
 *Required keys:* Each object must have a `name` and `definition` key.
 *Optional keys:* If you want to include an image with your entry, define the image path as the value of the `image` key. The `imageAlt` key is optional, even with the use of the `image` key, but you really should supply alt text for your images.
