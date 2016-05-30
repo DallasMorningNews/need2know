@@ -41,7 +41,7 @@ var sample = [
 	];
 ```
 
-*Required keys:* Each object must have a `name` and `definition` key.
+*Required keys:* Each object must have a `name` and `definition` key. The `name` key should match the value for the `data-entry` attribute on the corresponding `span` tag. The `definition` will be the text that appears in the glossary popup. 
 *Optional keys:* If you want to include an image with your entry, define the image path as the value of the `image` key. The `imageAlt` key is optional, even with the use of the `image` key, but you really should supply alt text for your images.
 
 ####Using the plugin

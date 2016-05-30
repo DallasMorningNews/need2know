@@ -72,9 +72,15 @@
   		if (entry.image) {
   			self.find("img").attr({
   				"display": "block",
-  				"src": entry.image,
-  				"alt": entry.imageAlt
+  				"src": entry.image
   			});
+
+        // if an entry has an imageAlt, popuplate the alt tag of the image with that value. If not, use the vaule of the entry's name.
+        if (entry.imageAlt) {
+          self.find("img").attr("alt", entry.imageAlt);
+        } else {
+          self.find("img").attr("alt", entry.name);
+        }
   		} else {
   			self.find("img").css("display", "none");
   		}
