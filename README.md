@@ -44,11 +44,13 @@ var sample = [
 
 ####Using the plugin
 
-Once your glossary JSON is defined and your terms are highlighted, you may invoke need2know by simply calling the need2know function on the id of the div of your glossary. The need2know has one required setting (`glossary`) and two optional settings (`theme` and `spacer`).
+Once your glossary JSON is defined and your terms are highlighted, you may invoke need2know by simply calling the need2know function on the id of the div of your glossary. need2know has one required setting (`glossary`) and two optional settings (`theme` and `spacer`).
 
-`glossary`: The name of the array where you defined your glossary JSON
+`glossary`: The name of the array where you defined your glossary JSON.
+
 `theme`: A string with the theme type. need2know has two themes, `light` and `dark`, and defaults to `dark`.
-`spacer`: An integer defining the amount of space below your highlighted terms your want your glossary popup to appear. The default is 10px.
+
+`spacer`: An integer defining the amount of space below your highlighted terms your want your glossary popup to appear. The default is 10px. Note: You do not need to include the unit of measure when you define `spacer`, just an integer.
 
 
 #####Using need2know without any options
@@ -61,6 +63,6 @@ $("#myGlossary").need2know({glossary: sampleGlossary});
 $("#myGlossary").need2know({
   glossary: sampleGlossary,
   theme: "light",
-  spacer: "20
+  spacer: 20
 });
 ```
