@@ -1,6 +1,8 @@
 # need2know
 jQuery plugin to create glossary style popups for highlighted words.
 
+<img src="images/example.png" alt="A sample of what need2know does." />
+
 #### Intro
 
 Does your story have a large cast of characters or locales that may or may not be hard for a reader to keep track of? Looking for a way to allow readers to quickly get a refresher on who or where someone is by simply hovering over their name? Enter need2know, a jquery plugin that displays a small, glossary-style popup beneath a highlighted name or place when the reader hovers/clicks on it. The content of the glossary popup is powered by a JSON array that you'll need to setup, but we'll walk you through that.
