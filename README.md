@@ -34,9 +34,9 @@ var sample = [
 		},
 		{
 			name: "Alexander Hamilton",
-			definition: "Alexander Hamilton was a founding father of the United States and the first US Secretary of the Tresaury. He was also on the losing end of a duel with Aaron Burr ",
+			definition: "Alexander Hamilton was a founding father of the United States and the first US Secretary of the Tresaury. He was also on the losing end of a duel with Aaron Burr.",
 			image: "images/hamilton.jpg",
-			imageAlt: "Alexander Hamilton, portrayed here shortly after teh American Revolution."
+			imageAlt: "Alexander Hamilton, portrayed here shortly after the American Revolution."
 		}
 	];
 ```
