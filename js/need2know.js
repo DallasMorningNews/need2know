@@ -31,10 +31,12 @@
 	//// DISPLAYING THE GLOSSARY /////////////////////////
 	//////////////////////////////////////////////////////
 
+    // variable to hold the value returned from the setTimeout that hides glossary entries
+    var hideTimeout;
+
     function showGlossary(thisObj) {
 
-        // clear the timeout that may already be hiding a previously displayed
-        // glossary entry
+        // clearing the timeout of a previous viewed glossary entry
         clearTimeout(hideTimeout);
 
   		// grabbing x and y coordinates for placement of the glossary popup
@@ -87,16 +89,12 @@
         }, 0);
   	}
 
-    // timeout function for hiding the glossary
-    var hideTimeout = setTimeout(function() {
-        self.css("display", "none");
-    }, 250);
-
-
   	// hiding the glossary
   	function hideGlossary() {
       self.removeClass("glossDisplay");
-      hideTimeout();
+      hideTimeout = setTimeout(function() {
+        self.css("display", "none");
+      }, 250);
   	}
 
   	// display and build the glossary popup on mouseover
