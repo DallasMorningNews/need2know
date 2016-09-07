@@ -11,7 +11,7 @@
     var self = this;
 
     if (settings.theme === "light") {
-      this.addClass("whiteTheme");
+      this.addClass("white-theme");
     }
 
     //////////////////////////////////////////////////////
@@ -85,13 +85,13 @@
   		self.find("p").html(entry.definition);
 
         setTimeout(function() {
-            self.addClass("glossDisplay");
+            self.addClass("gloss-display");
         }, 0);
   	}
 
   	// hiding the glossary
   	function hideGlossary() {
-      self.removeClass("glossDisplay");
+      self.removeClass("gloss-display");
       hideTimeout = setTimeout(function() {
         self.css("display", "none");
       }, 250);
@@ -114,7 +114,7 @@
   	});
 
   	// clicking the close button
-  	self.find(".closeButton").on("click", function() {
+  	self.find(".close-button").on("click", function() {
   		hideGlossary();
   		$(".gloss").on("mouseout", function() {
   			hideGlossary();

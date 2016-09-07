@@ -31,13 +31,13 @@
     -moz-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
-  .glossDisplay {
+  .gloss-display {
     opacity: 1;
     margin-top: 5px; }
-  .whiteTheme {
+  .white-theme {
     background-color: #fbfbfb;
     color: #212121; }
-  .glossary .closeButton {
+  .glossary .close-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -51,7 +51,7 @@
     font-weight: bold;
     cursor: pointer;
     color: white; }
-  .whiteTheme .closeButton {
+  .white-theme .close-button {
     color: #212121; }
   .glossary img {
     width: 150px;
