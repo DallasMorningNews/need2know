@@ -41,7 +41,7 @@ var sample = [
 	];
 ```
 
-*Required keys:* Each object must have a `name` and `definition` key. The `name` key should match the value for the `data-entry` attribute on the corresponding `span` tag. The `definition` will be the text that appears in the glossary popup. 
+*Required keys:* Each object must have a `name` and `definition` key. The `name` key should match the value for the `data-entry` attribute on the corresponding `span` tag. The `definition` will be the text that appears in the glossary popup.
 *Optional keys:* If you want to include an image with your entry, define the image path as the value of the `image` key. The `imageAlt` key is optional, even with the use of the `image` key, but you really should supply alt text for your images.
 
 ####Using the plugin
@@ -57,12 +57,12 @@ Once your glossary JSON is defined and your terms are highlighted, you may invok
 
 #####Using need2know without any options
 ```javascript
-$("#myGlossary").need2know({glossary: sampleGlossary});
+$("#my-glossary").need2know({glossary: sampleGlossary});
 ```
 
 #####Using need2know with options
 ```javascript
-$("#myGlossary").need2know({
+$("#my-glossary").need2know({
   glossary: sampleGlossary,
   theme: "light",
   spacer: 20
