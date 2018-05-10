@@ -23,7 +23,7 @@ To highlight a person, place, phrase, etc. for inclusion in your glossary, simpl
 It's hard to say the name <span class="gloss" data-entry="Aaron Burr">Aaron Burr</span> when you have a mouth full of peanut butter.
 ```
 
-####Creating your glossary
+#### Creating your glossary
 As I mentioned above, need2know is powered by a list of terms you define within a JSON array. Each object within the array requires a name and definition, and optionally, could include an image. You can see a sample of the glossary format in the js folder of this project, or right here:
 
 ```javascript
@@ -44,7 +44,7 @@ var sample = [
 *Required keys:* Each object must have a `name` and `definition` key. The `name` key should match the value for the `data-entry` attribute on the corresponding `span` tag. The `definition` will be the text that appears in the glossary popup.
 *Optional keys:* If you want to include an image with your entry, define the image path as the value of the `image` key. The `imageAlt` key is optional, even with the use of the `image` key, but you really should supply alt text for your images.
 
-####Using the plugin
+#### Using the plugin
 
 Once your glossary JSON is defined and your terms are highlighted, you may invoke need2know by simply calling the need2know function on the id of the div of your glossary. need2know has one required setting (`glossary`) and two optional settings (`theme` and `spacer`).
 
@@ -55,12 +55,12 @@ Once your glossary JSON is defined and your terms are highlighted, you may invok
 `spacer`: An integer defining the amount of space below your highlighted terms your want your glossary popup to appear. The default is 10px. Note: You do not need to include the unit of measure when you define `spacer`, just an integer.
 
 
-#####Using need2know without any options
+##### Using need2know without any options
 ```javascript
 $("#my-glossary").need2know({glossary: sampleGlossary});
 ```
 
-#####Using need2know with options
+##### Using need2know with options
 ```javascript
 $("#my-glossary").need2know({
   glossary: sampleGlossary,
